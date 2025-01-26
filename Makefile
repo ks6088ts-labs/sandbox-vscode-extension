@@ -55,5 +55,5 @@ package: ## package applications
 	vsce package
 
 .PHONY: publish
-publish: ## publish applications
+publish: package ## publish applications
 	vsce publish $(GIT_TAG)

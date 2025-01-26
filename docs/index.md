@@ -31,6 +31,8 @@ npx --package yo --package generator-code -- yo code
 
 `https://dev.azure.com/YOUR_ORG/_usersSettings/tokens` にアクセスして、拡張機能を公開するための Personal Access Token を取得します。
 
+`https://marketplace.visualstudio.com/manage/publishers/YOUR_ORG` にアクセスして、Publisher と VSCode 拡張機能を管理します。
+
 ```shell
 # パッケージを作成する
 make package
