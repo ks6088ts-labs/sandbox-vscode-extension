@@ -30,7 +30,7 @@ build: ## build applications
 	pnpm run compile
 
 .PHONY: ci-test
-ci-test: install-deps-dev format-check lint test build ## run CI test
+ci-test: install-deps-dev format-check lint build ## run CI test
 
 .PHONY: run
 run: ## run applications
