@@ -9,6 +9,12 @@
   "categories": [
     "Other"
   ],
+  "publisher": "ks6088ts",
+  "icon": "assets/icon.jpg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ks6088ts-labs/sandbox-vscode-extension"
+  },
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {

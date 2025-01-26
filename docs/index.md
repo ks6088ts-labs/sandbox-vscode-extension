@@ -24,3 +24,20 @@ npx --package yo --package generator-code -- yo code
 [Chat extensions](https://code.visualstudio.com/api/extension-guides/chat) を参考に基礎的なチャット拡張機能を理解します。
 
 [Tutorial: Build a code tutorial chat participant with the Chat API](https://code.visualstudio.com/api/extension-guides/chat-tutorial) を参考に、チャット拡張機能を作成します。
+
+### Marketplace に公開する
+
+[Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) を参考に、Marketplace に拡張機能を公開します。
+
+`https://dev.azure.com/YOUR_ORG/_usersSettings/tokens` にアクセスして、拡張機能を公開するための Personal Access Token を取得します。
+
+```shell
+# パッケージを作成する
+make package
+
+# パッケージを公開する
+make publish
+```
+
+> [!NOTE]
+> Note: 現状 pnpm でのパッケージングがうまくいかないため、npm か yarn でパッケージングする必要があります。(ここでは yarn を利用しています)
