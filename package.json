@@ -26,15 +26,23 @@
     ],
     "chatParticipants": [
       {
-        "id": "chat-tutorial.code-tutor",
-        "fullName": "Code Tutor",
-        "name": "tutor",
-        "description": "What can I teach you?",
+        "id": "ks6088ts.custom-copilot",
+        "fullName": "CustomCopilot",
+        "name": "cc",
+        "description": "CustomCopilot は、日々の業務をサポートします。",
         "isSticky": true,
         "commands": [
           {
-            "name": "exercise",
-            "description": "Provide exercises to practice a concept."
+            "name": "boscar",
+            "description": "BOSCAR フレームワークに基づいて情報を整理します。"
+          },
+          {
+            "name": "translate",
+            "description": "日本語↔英語翻訳を行います。"
+          },
+          {
+            "name": "summarize",
+            "description": "文章を要約します。"
           }
         ]
       }
