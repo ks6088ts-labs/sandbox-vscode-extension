@@ -39,6 +39,10 @@
           {
             "name": "translate",
             "description": "日本語↔英語翻訳を行います。"
+          },
+          {
+            "name": "summarize",
+            "description": "文章を要約します。"
           }
         ]
       }
