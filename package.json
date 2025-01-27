@@ -2,7 +2,7 @@
   "name": "sandbox-vscode-extension",
   "displayName": "sandbox-vscode-extension",
   "description": "",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -43,6 +43,10 @@
           {
             "name": "summarize",
             "description": "文章を要約します。"
+          },
+          {
+            "name": "minutes",
+            "description": "議事録を作成します。"
           }
         ]
       }
