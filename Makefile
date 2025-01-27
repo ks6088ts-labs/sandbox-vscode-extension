@@ -51,7 +51,7 @@ run: ## run applications
 		src/main.ts
 
 .PHONY: package
-package: ## package applications
+package: install-deps-dev ## package applications
 	vsce package
 
 .PHONY: publish

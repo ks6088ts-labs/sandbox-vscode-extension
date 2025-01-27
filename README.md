@@ -4,28 +4,10 @@
 
 This is a sandbox repository for creating a Visual Studio Code extension.
 
-## Prerequisites
+## Features
 
-- [Node.js 22+](https://nodejs.org/en/download/)
-- [pnpm](https://pnpm.io/installation)
-- [GNU Make](https://www.gnu.org/software/make/)
-
-## Development instructions
-
-### Local development
-
-Use Makefile to run the project locally.
-
-```shell
-# help
-make
-
-# install dependencies for development
-make install-deps-dev
-
-# run tests
-make test
-
-# run CI tests
-make ci-test
-```
+| Command          | Description                             | Video                                                                                                    |
+| ---------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `@cc /translate` | 日英に翻訳する                          | [English to Japanese](https://youtu.be/2dSEqtLKPDc), [Japanese to English](https://youtu.be/IlD_8qcK8Wg) |
+| `@cc /boscar`    | BOSCAR フレームワークを適用して整理する | [https://youtu.be/G3--147LbHE](https://youtu.be/G3--147LbHE)                                             |
+| `@cc /summarize` | 要約する                                | [https://youtu.be/JCvAODdz2Jc](https://youtu.be/JCvAODdz2Jc)                                             |

@@ -2,7 +2,7 @@
   "name": "sandbox-vscode-extension",
   "displayName": "sandbox-vscode-extension",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "engines": {
     "vscode": "^1.96.0"
   },
