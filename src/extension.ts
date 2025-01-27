@@ -1,11 +1,12 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
-import { boscarPrompt } from "./prompts";
+import { boscarPrompt, translatePrompt } from "./prompts";
 
 // Define the commands that the chatbot can respond to
 enum Commands {
   BOSCAR = "boscar",
+  TRANSLATION = "translate",
 }
 
 // Define the prompt for each command
@@ -13,6 +14,8 @@ function getPrompt(command: Commands): string {
   switch (command) {
     case Commands.BOSCAR:
       return boscarPrompt;
+    case Commands.TRANSLATION:
+      return translatePrompt;
     default:
       return "";
   }

@@ -35,6 +35,10 @@
           {
             "name": "boscar",
             "description": "BOSCAR フレームワークに基づいて情報を整理します。"
+          },
+          {
+            "name": "translate",
+            "description": "日本語↔英語翻訳を行います。"
           }
         ]
       }
