@@ -6,8 +6,9 @@ This is a sandbox repository for creating a Visual Studio Code extension.
 
 ## Features
 
-| Command          | Description                             | Video                                                                                                    |
-| ---------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| `@cc /translate` | 日英に翻訳する                          | [English to Japanese](https://youtu.be/2dSEqtLKPDc), [Japanese to English](https://youtu.be/IlD_8qcK8Wg) |
-| `@cc /boscar`    | BOSCAR フレームワークを適用して整理する | [https://youtu.be/G3--147LbHE](https://youtu.be/G3--147LbHE)                                             |
-| `@cc /summarize` | 要約する                                | [https://youtu.be/JCvAODdz2Jc](https://youtu.be/JCvAODdz2Jc)                                             |
+| Command          | Description                             | Video                                |
+| ---------------- | --------------------------------------- | ------------------------------------ |
+| `@cc /translate` | 日英に翻訳する                          | ![translate](./assets/translate.gif) |
+| `@cc /boscar`    | BOSCAR フレームワークを適用して整理する | ![boscar](./assets/boscar.gif)       |
+| `@cc /summarize` | 要約する                                | ![summarize](./assets/summarize.gif) |
+| `@cc /minutes`   | 議事録を作成する                        | ![minutes](./assets/minutes.gif)     |
