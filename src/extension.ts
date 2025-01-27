@@ -1,15 +1,26 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
+import { boscarPrompt } from "./prompts";
+
+// Define the commands that the chatbot can respond to
+enum Commands {
+  BOSCAR = "boscar",
+}
+
+// Define the prompt for each command
+function getPrompt(command: Commands): string {
+  switch (command) {
+    case Commands.BOSCAR:
+      return boscarPrompt;
+    default:
+      return "";
+  }
+}
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-  const BASE_PROMPT =
-    "You are a helpful code tutor. Your job is to teach the user with simple descriptions and sample code of the concept. Respond with a guided overview of the concept in a series of messages. Do not give the user the answer directly, but guide them to find the answer themselves. If the user asks a non-programming question, politely decline to respond.";
-  const EXERCISES_PROMPT =
-    "You are a helpful tutor. Your job is to teach the user with fun, simple exercises that they can complete in the editor. Your exercises should start simple and get more complex as the user progresses. Move one concept at a time, and do not move on to the next concept until the user provides the correct answer. Give hints in your exercises to help the user learn. If the user is stuck, you can provide the answer and explain why it is the answer. If the user asks a non-programming question, politely decline to respond.";
-
   // define a chat handler
   const handler: vscode.ChatRequestHandler = async (
     request: vscode.ChatRequest,
@@ -17,12 +28,11 @@ export function activate(context: vscode.ExtensionContext) {
     stream: vscode.ChatResponseStream,
     token: vscode.CancellationToken
   ) => {
-    // initialize the prompt
-    let prompt = BASE_PROMPT;
+    // convert command to enum
+    const command = request.command as Commands;
 
-    if (request.command === "exercise") {
-      prompt = EXERCISES_PROMPT;
-    }
+    // get the prompt
+    const prompt = getPrompt(command);
 
     // initialize the messages array with the prompt
     const messages = [vscode.LanguageModelChatMessage.User(prompt)];
@@ -58,7 +68,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   // create participant
   const tutor = vscode.chat.createChatParticipant(
-    "chat-tutorial.code-tutor",
+    "ks6088ts.custom-copilot",
     handler
   );
 
